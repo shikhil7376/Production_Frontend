@@ -1,4 +1,4 @@
-import api from '../Services/Axios'
+import api from '../Services/axios'
 import adminRoutes from '../Services/Endpoint/adminEndPoint'
 import errorHandle from './Error'
 

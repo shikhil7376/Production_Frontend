@@ -1,4 +1,4 @@
-import api from "../Services/Axios";
+import api from "../Services/axios";
 import chatRoutes from "../Services/Endpoint/chatEndPoint";
 import errorHandle from "./Error";
 

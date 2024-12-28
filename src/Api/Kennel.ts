@@ -1,4 +1,4 @@
-import api from "../Services/Axios";
+import api from "../Services/axios";
 import kennelRoutes from "../Services/Endpoint/kennelEndPoint";
 import errorHandle from "./Error";
 import { userData } from "../Interface/DatatypeInterface";
