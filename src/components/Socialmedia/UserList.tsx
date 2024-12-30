@@ -3,11 +3,17 @@ import { Avatar} from "@nextui-org/react";
 
 
 const UserList = ({user,handlefunction,onlineUsers,latestMessage}) => {    
-  const date = new Date(latestMessage.updatedAt);
+  const date = new Date(latestMessage?.updatedAt);
   let hours = date.getHours();
-  const minutes = date.getMinutes().toString().padStart(2, '0');
-  hours = hours % 12 || 12; 
-  const formattedTime = `${hours}:${minutes}`;
+  let minutes = date.getMinutes();
+  
+  if (isNaN(minutes)) {
+    minutes = 0;
+  }
+  
+  let formattedMinutes = minutes.toString().padStart(2, '0');
+  hours = hours % 12 || 0; 
+  const formattedTime = `${hours}:${formattedMinutes}`;
     
   return (
     <div className='display flex p-2 items-center' onClick={handlefunction} >
