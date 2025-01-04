@@ -32,7 +32,7 @@ interface Message {
   type?: 'text' | 'audio'
 }
 
-const ENDPOINT = "https://quixx.shop"
+const ENDPOINT = "https://quiix.shop/api"
 
 var socket, selectedChatCompare
 
